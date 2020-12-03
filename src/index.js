@@ -17,8 +17,8 @@ app.get('/',(req,res) => {
 });
 
 app.post('/add', function(req,res){
-    const num1 = Number(req.body.num1);
-    const num2 = Number(req.body.num2);
+    const num1 = (req.body.num1);
+    const num2 = (req.body.num2);
     const output = num1+num2;
     if(typeof num1 === "string" || typeof num2 === "string"){
         res.send({
@@ -45,8 +45,8 @@ app.post('/add', function(req,res){
 });
 
 app.post('/sub', function(req,res){
-    const num1 = Number(req.body.num1);
-    const num2 = Number(req.body.num2);
+    const num1 = (req.body.num1);
+    const num2 = (req.body.num2);
     const output = num1-num2;
     if(typeof num1 === "string" || typeof num2 === "string"){
         res.send({
@@ -73,8 +73,8 @@ app.post('/sub', function(req,res){
 });
 
 app.post('/multiply', function(req,res){
-    const num1 = Number(req.body.num1);
-    const num2 = Number(req.body.num2);
+    const num1 = (req.body.num1);
+    const num2 = (req.body.num2);
     const output = num1*num2;
     if(typeof num1 === "string" || typeof num2 === "string"){
         res.send({
@@ -101,8 +101,8 @@ app.post('/multiply', function(req,res){
 });
 
 app.post('/divide', function(req,res){
-    const num1 = Number(req.body.num1);
-    const num2 = Number(req.body.num2);
+    const num1 = (req.body.num1);
+    const num2 = (req.body.num2);
     const output = num1/num2;
     if(typeof num1 === "string" || typeof num2 === "string"){
         res.send({
